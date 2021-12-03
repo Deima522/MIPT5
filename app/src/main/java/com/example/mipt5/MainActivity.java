@@ -26,6 +26,6 @@ public class MainActivity extends AppCompatActivity {
             {
                 tvContent.setText(result);
             }
-        }.execute("USD, JPY, BGN, CZK, DKK");
+        }.execute();
     }
 }

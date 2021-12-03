@@ -9,7 +9,7 @@ public class DataLoader extends AsyncTask<String, Void, String> {
 
     protected String doInBackground(String... params) {
         try {
-            return DataManager.getRateFromECB(params[4]);
+            return DataManager.getRateFromECB(params[0]);
         } catch (Exception e) {
             StringWriter sw = new StringWriter();
             e.printStackTrace(new PrintWriter(sw));

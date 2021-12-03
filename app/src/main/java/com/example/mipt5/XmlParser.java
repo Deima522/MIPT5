@@ -26,8 +26,7 @@ public class XmlParser {
                 if (cube.hasAttribute( "currency" )) {
                     String currencyName = cube.getAttribute( "currency" );
                     String currencyRate = cube.getAttribute( "rate" );
-                    result = currencyName + " - " + currencyRate;
-
+                    result = result + '\n' + currencyName + " - " + currencyRate;
                 }
             }
         } catch (ParserConfigurationException | SAXException e) {
